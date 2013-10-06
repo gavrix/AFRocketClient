@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.source_files = 'AFRocketClient'
   s.requires_arc = true
   s.ios.deployment_target = '6.0'
-  s.dependency 'AFNetworking', '~>2.0'
+  s.dependency 'AFNetworking/NSURLConnection', '~>2.0'
 
 end
