@@ -298,7 +298,7 @@ typedef NS_ENUM(NSUInteger, AFEventSourceState) {
                         [self.delegate eventSource:self didReceiveMessage:event];
                     }
 
-                    for (AFServerSentEventBlock block in [self.listenersKeyedByEvent objectForKey:event.event]) {
+                    for (AFServerSentEventBlock block in [self.listenersKeyedByEvent objectForKey:event.event].allValues) {
                         if (block) {
                             block(event);
                         }
